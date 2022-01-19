@@ -8,6 +8,7 @@
   --color-cards-portfolio: #eee;
   --color-white: #ffffff;
   --color-white60: rgba(250, 255, 255, 0.6);
+  --color-white10: rgba(250, 255, 255, 0.1);
   --color-overlay: rgba(47, 48, 58, 0.4);
   --color-current: currentColor;
   --color-inactive-icon: #afb1b8;
@@ -530,6 +531,7 @@ img {
 }
 .footer-logo {
   color: var(--color-white);
+  padding: 0;
 }
 .footer-address {
   margin-top: 20px;
@@ -550,4 +552,55 @@ img {
 
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-adress-container {
+  margin-right: 70px;
+}
+
+.footer-social-container {
+  margin-top: 12px;
+}
+
+.footer-social-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+
+  color: var(--color-white);
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--color-white10);
+  color: var(--color-white);
+
+  border-radius: 50%;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--color-active);
 }
