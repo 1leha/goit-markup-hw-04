@@ -107,21 +107,16 @@ img {
   display: flex;
 }
 
-.icon-centred {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .header .container {
-  justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 /* *Стили для логотипа */
 .logo {
+  display: block;
+  padding-top: 24px;
+  padding-top: 25px;
+
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
@@ -179,6 +174,10 @@ img {
 
 /* *Стили для линков меню */
 .header-menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--color-primary);
 }
 /* События меню */
@@ -191,10 +190,19 @@ img {
 }
 
 /* *Стили для контактов */
+.header-contacts {
+  margin-left: auto;
+}
+/* .header-contacts-item {
+  display: flex;
+} */
 
 .email,
 .phone {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -216,10 +224,10 @@ img {
 .email:focus {
   color: var(--color-active);
 }
-
+/* 
 .email-icon {
   margin-right: 10px;
-}
+} */
 
 /* *Стили для заголовков */
 .title {
@@ -234,11 +242,9 @@ img {
 
 /* *Стили для Героя */
 .hero {
-  background-color: peachpuff;
-
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1600px;
-
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -291,22 +297,26 @@ img {
 .peculiarities {
   padding-bottom: 0px;
 }
+
 .peculiarities-list {
   display: flex;
 }
+
 .peculiarities-item {
   flex-basis: 270px;
 }
+
 .peculiarities-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .peculiarities-thumb {
-  display: flex;
   height: 120px;
+  margin-bottom: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 30px;
   background-color: var(--color-third);
 
   border-radius: 4px;
@@ -322,6 +332,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .peculiarities-text {
   font-size: 14px;
   line-height: 1.71;
@@ -333,12 +344,16 @@ img {
 /* Стили для "Чем мы занимаемся"
  */
 
-.specialization .wrapper {
-  justify-content: space-between;
+/* .specialization .wrapper {
   align-items: center;
-}
+} */
+
 .specialization-item {
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.specialization-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* *Стили для "Наша команда"
@@ -353,9 +368,8 @@ img {
 }
 
 .our-team-item {
-  flex-basis: calc(100% / 4);
-  flex-grow: 0;
-  flex-shrink: 1;
+  flex-basis: calc((100% - 90px) / 4);
+
   background-color: var(--color-white);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -371,6 +385,7 @@ img {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .our-team-name {
   margin-bottom: 10px;
 
@@ -380,6 +395,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .our-team-profession {
   margin-bottom: 16px;
 
@@ -391,11 +407,19 @@ img {
   color: var(--color-secondary);
 }
 
+.our-team-social {
+  display: flex;
+  justify-content: center;
+}
+
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
 
@@ -421,6 +445,9 @@ img {
 }
 
 .clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
 
@@ -464,7 +491,7 @@ img {
   text-decoration: none;
 }
 .portfolio-link:hover,
-:focus {
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -518,6 +545,9 @@ img {
   margin-bottom: 9px;
 }
 .address-link {
+  padding-top: 0;
+  padding-bottom: 0;
+
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
