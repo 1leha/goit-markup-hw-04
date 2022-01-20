@@ -15,6 +15,7 @@
 
   /* Переменные цветов активности */
   --color-active: #2196f3;
+  --color-active-button: #188CE8;
 
   /* Шрифты */
   --primary-font: 'Roboto', sans-serif;
@@ -201,6 +202,7 @@ img {
 .email,
 .phone {
   display: flex;
+  align-items: stretch;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -290,8 +292,8 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--color-third);
-  color: var(--color-primary);
+  background-color: var(--color-active-button);
+  color: var(--color-white);
 }
 
 /* *Стили для "Особенности" */
