@@ -15,7 +15,7 @@
 
   /* Переменные цветов активности */
   --color-active: #2196f3;
-  --color-active-button: #188CE8;
+  --color-active-button: #188ce8;
 
   /* Шрифты */
   --primary-font: 'Roboto', sans-serif;
@@ -385,8 +385,8 @@ img {
 }
 
 .our-team-content {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team-name {
@@ -522,8 +522,6 @@ img {
   color: var(--color-secondary);
 }
 
-/* TOdo */
-
 /* *Стили для Футер */
 .footer {
   padding-top: 60px;
@@ -558,14 +556,11 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-adress-container {
   margin-right: 70px;
-}
-
-.footer-social-container {
-  margin-top: 12px;
 }
 
 .footer-social-title {
